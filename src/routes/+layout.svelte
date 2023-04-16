@@ -5,8 +5,8 @@
 	/* Call Ionic's setup routine */
 	setupIonicBase();
 
-	App.addListener('backButton', () => {
-		console.log('Backbutton activated');
+	App.addListener('backButton', (ev) => {
+		console.log('Backbutton activated', ev);
 	});
 
 	/* Import all components - or do partial loading - see below */
